@@ -1,3 +1,4 @@
+//Weekly revenue tracker
 #include <stdio.h>
 
 int main(){
