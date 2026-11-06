@@ -24,7 +24,7 @@ void saveStudent(){
 	
 	if(fptr == NULL){
 		printf("Error in openning the file path.\n");
-		exit(0);
+		exit(1);
 	}
 	
 	printf("Enter student's full name: \t");
@@ -37,6 +37,8 @@ void saveStudent(){
 	fgets(course, sizeof(course), stdin);
 	
 	fprintf(fptr, "Full name: %s\nAdmission number: %s\nCourse: %s\n", name, adm_no, course);
+	
+fprintf(fptr, "---------------------------------------\n");
 	
 	printf("Studet's information successfully written to file.\n");
 	
@@ -52,14 +54,15 @@ void displayStudennts(){
 	
 	if(fptr == NULL){
 		printf("Error in openning the file path.\n");
-		exit(0);
+		exit(1);
 	}
 	
 	while((ch = getc(fptr)) != EOF){
 		putchar(ch);
 		
 	}
-		printf("========================================\n");
+	
+	printf("========================================\n");
 	printf("File successfully read.\n");
 	
 	fclose(fptr);
@@ -76,7 +79,7 @@ void addStudent(){
 	
 	if(fptr == NULL){
 		printf("Error in openning the file path.\n");
-		exit(0);
+		exit(1);
 	}
 	
 	printf("Enter student's full name: \t");
