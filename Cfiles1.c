@@ -1,7 +1,10 @@
 //File handling
 #include <stdio.h>
 #include <stdlib.h>
-
+/*
+AUTHOR: KIPYEGON JAIRUS
+REG NO.: BCS-05-0210/2026
+*/
 //void writeToFile();
 //void readFromFile();
 void appendToFile();
