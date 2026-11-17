@@ -10,7 +10,7 @@ struct Patient
 	
 	};
 
-int main(int argc, char** argv)
+int main()
 {
 	Patient patient1;
 	
